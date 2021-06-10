@@ -1,6 +1,7 @@
 1.
-//TC: O(n) && SC: O(1)
+
 /**
+TC: O(n) && SC: O(1)
 We start with two pointer technique. We start with left pointer at 0 a and right pointer at the end. 
 As we go through the array we update the leftmax and rightmax. 
 At any given point, if left is lesser than right then leftmax is lesser than rightmax and vice versa for when right is lesser than left. 
@@ -33,9 +34,8 @@ class Solution {
 }
 
 2.
-TC: O(n) SC: O(n)
-
 /**
+TC: O(n) SC: O(n)
 In this case we calculate the leftmax for each index and store in an array and we do the same way we store rightmax for each index in another array. 
 Therefore the water that can be trapped at any index is equal to min(leftmax[i[,rightmax[i]) - height[i]
 */
